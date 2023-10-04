@@ -1,13 +1,15 @@
 <template>
-  <VCard>
+  <VCard class="mr-10">
     <VImg
-      :width="300"
+      :width="360"
+      :height="500"
       :src="trainer.img"
+      cover
     >
     </VImg>
-    <VCardSubtitle class="pt-4">
+    <div class="pt-4 ml-4">
       {{ trainer.firstname }} {{ trainer.lastname }}
-    </VCardSubtitle>
+    </div>
     <VCardText>
       <div>{{ trainer.position }}</div>
       <a href="">Подробнее</a>

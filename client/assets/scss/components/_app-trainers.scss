@@ -1,11 +1,29 @@
 .trainers{
+  margin: 0;
   &__head{
-    padding-bottom: 60px;
     color: #141024;
     font-family: Jost;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 160%; /* 80px */
+  }
+  &__slider{
+    width: 1680px;
+    color: #141024;
+    font-family: Jost;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    margin-left: 250px;
+  }
+  &__name{
+    color: #141024;
+    font-family: Jost;
+    font-size: 30px !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
   }
 }

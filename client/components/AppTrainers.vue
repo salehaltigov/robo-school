@@ -3,21 +3,27 @@
     class="trainers"
     id="trainers"
   >
-    <VRow class="trainers__head">
+    <VRow class="trainers__head pb-15">
       <h1>Профессиональные тренеры</h1>
     </VRow>
-    <VCarousel
-      hide-delimiters
-      height="600"
+  </VContainer>
+  <div class="trainers__slider">
+    <VSlideGroup
+      v-model="model"
+      class="pa-4"
+      prev-icon="mdi-chevron-left-circle"
+      next-icon="mdi-chevron-right-circle"
+      multiple
+      show-arrows
     >
-      <VCarouselItem
+      <VSlideGroupItem
         v-for="trainer in trainersList"
         :key="trainer.id"
       >
         <TrainerCard :trainer="trainer" />
-      </VCarouselItem>
-    </VCarousel>
-  </VContainer>
+      </VSlideGroupItem>
+    </VSlideGroup>
+  </div>
 </template>
 
 <script setup lang="ts">
