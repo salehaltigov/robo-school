@@ -19,7 +19,7 @@
         <a href="#price">Стоимость</a>
       </VCol>
       <VCol class="main-header__tel">
-        <a href="">+7 800 000 11 22</a>
+        <a href="tel:+78000001122">+7 800 000 11 22</a>
       </VCol>
     </VRow>
     <VContainer class="main-header__body d-flex align-center">

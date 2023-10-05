@@ -11,6 +11,6 @@ class FeedbackSerializer(serializers.ModelSerializer):
         fields = [
             "id",
             "name",
+            "tel",
             "email",
-            "tel",            
         ]

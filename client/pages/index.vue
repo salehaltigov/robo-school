@@ -4,6 +4,7 @@
     <AppAbout />
     <AppTrainers />
     <AppPack />
+    <AppFeedback />
   </div>
 </template>
 

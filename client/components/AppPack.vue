@@ -6,7 +6,7 @@
     <VRow class="packs-head mb-15">
       <h1>Выберите нужный пакет</h1>
     </VRow>
-    <VRow class="packs-body d-flex justify-space-between align-center">
+    <VRow class="packs-body d-flex justify-space-between align-center mb-16">
       <VCard
         title="– PRO –"
         width="360px"

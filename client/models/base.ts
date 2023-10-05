@@ -13,3 +13,9 @@ export interface TrainerModel {
   order: number | null
   social: TrainerSocialModel
 }
+
+export interface FeedbackModel{
+  name: string
+  tel: string
+  email: string
+}
