@@ -12,7 +12,6 @@
             :error-messages="v$.firstname.$errors.map(e => e.$message)"
             required
             single-line
-            bg-color="#FFD5BB"
             placeholder="Имя"
           ></VTextField>
           <VTextField
@@ -20,7 +19,6 @@
             :error-messages="v$.phone.$errors.map(e => e.$message)"
             required
             single-line
-            bg-color="#FFD5BB"
             placeholder="Телефон"
           ></VTextField>
           <VTextField
@@ -28,7 +26,6 @@
             :error-messages="v$.email.$errors.map(e => e.$message)"
             required
             single-line
-            bg-color="#FFD5BB"
             placeholder="E-mail"
           ></VTextField>
           <VBtn
@@ -36,10 +33,28 @@
             block
             class="feedback__form-btn mt-2"
             rounded="0"
+            width="500px"
+            height="64px"
+            color="#FFF"
+            border="0"
           >Оформить заявку</VBtn>
         </VCol>
       </VRow>
     </VContainer>
+  </div>
+  <div class="footer pl-16 pa-10">
+    <VRow>
+      <VCol class="footer__text">
+        <a
+          href=""
+          class="footer__logo"
+        >ROBO.SCHOOL</a>
+        <p>© ROBO.SCHOOL</p>
+      </VCol>
+      <VCol class="footer__tel pr-16">
+        <a href="tel:+78000001122">+7 800 000 11 22</a>
+      </VCol>
+    </VRow>
   </div>
 </template>
 

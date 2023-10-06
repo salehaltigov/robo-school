@@ -3,7 +3,9 @@ from ckeditor_uploader.fields import RichTextUploadingField
 from django.utils.translation import gettext_lazy as _
 
 # Create your models here.
-
+class SocialIconsChoices(models.TextChoices):
+    FACEBOOK = "mdi-facebook", _("Facebook"),
+    INSTAGRAM = "mdi-instagram", _("Instagram")
 class Trainer(models.Model):
 
     firstname = models.CharField(
@@ -30,13 +32,14 @@ class Trainer(models.Model):
 class Social(models.Model):
     """
     Социальные сети пользователя
-    """    
+    """
     trainer = models.ForeignKey(
         Trainer,
         verbose_name=_("Пользователь"),
         on_delete=models.CASCADE,
         null=True,
         blank=True,
+        related_name="socials"
     )
     name = models.CharField(
         _("Наименование"), max_length=50, null=True, blank=True,
@@ -48,6 +51,7 @@ class Social(models.Model):
         help_text="Необходим класс mdi",
         null=True,
         blank=True,
+        choices= SocialIconsChoices.choices
     )
 
     link = models.URLField(
