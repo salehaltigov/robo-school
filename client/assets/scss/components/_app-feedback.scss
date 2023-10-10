@@ -1,8 +1,6 @@
 .feedback{
   background-color: #D52027;
   background-image: url("/assets/images/feedback-background.png");
-  background-position: bottom left;
-  background-repeat: repeat-x;
   &__text{
     color: #FFF;
     font-family: Jost;
@@ -30,31 +28,14 @@
   border-radius: 0% !important;
 }
 
-.footer{
-  background-color: #141024;
-  &__logo{
-    color: #FFF;
-    font-family: Jost;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 160%;
+@media (max-width: 400px) {
+  .feedback{
+    &__text{
+      font-size: 16px;
+    }
+    &__text-head{
+      font-size: 25px;
+    }
   }
-  &__text{
-    color: rgba(255, 255, 255, 0.70);
-    font-family: Jost;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-  }
-  &__tel{
-    color: #FFF;
-    text-align: right;
-    font-family: Jost;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 160%;
-  }
+
 }

@@ -1,9 +1,9 @@
 <template>
   <VContainer
-    class="trainers"
+    class="trainers mt-16"
     id="trainers"
   >
-    <VRow class="trainers__head pb-15">
+    <VRow class="section-title pb-15 mt-16 d-flex justify-md-start justify-center text-center">
       <h1>Профессиональные тренеры</h1>
     </VRow>
   </VContainer>

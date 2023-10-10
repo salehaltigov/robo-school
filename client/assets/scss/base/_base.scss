@@ -20,6 +20,10 @@ li {
   list-style: none;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Jost";
@@ -27,4 +31,19 @@ body {
 
 .v-container{
   max-width: 1160px !important;
+}
+
+.section-title{
+  color: #141024;
+  font-family: Jost;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+}
+
+@media (max-width: 720px) {
+  .section-title{
+    font-size: 15px;
+  }
 }

@@ -12,7 +12,7 @@
     </div>
     <VCardText>
       <div>{{ trainer.position }}</div>
-      <v-dialog
+      <VDialog
         width="940"
         height="664"
       >
@@ -63,7 +63,7 @@
             <div class="trainer-dialog__text mb-10 ml-10">{{ trainer.text }}</div>
           </VCard>
         </template>
-      </v-dialog>
+      </VDialog>
     </VCardText>
   </VCard>
 </template>
