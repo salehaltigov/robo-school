@@ -13,7 +13,7 @@
         height="460px"
         class="packs-body__card d-flex flex-column justify-end"
       >
-        <h2 class="mb-5 mt-15">20.000 ₽</h2>
+        <h2 class="packs-body__head mb-5 mt-15">20.000 ₽</h2>
         <p>УМК по робототетхнике <br> и программированию</p>
         <a
           href="#feedback"
@@ -26,7 +26,7 @@
         height="460px"
         class="packs-body__card d-flex flex-column justify-end"
       >
-        <h2 class="mb-5 mt-15">15.000 ₽</h2>
+        <h2 class="packs-body__head mb-5 mt-15">15.000 ₽</h2>
         <p>УМК по робототехнике </p>
         <a
           href="#feedback"
@@ -39,7 +39,7 @@
         height="460px"
         class="packs-body__card d-flex flex-column justify-end"
       >
-        <h2 class="mb-5 mt-15">10.000 ₽</h2>
+        <h2 class="packs-body__head mb-5 mt-15">10.000 ₽</h2>
         <p>УМК по программированию</p>
         <a
           href="#feedback"
