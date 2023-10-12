@@ -21,7 +21,7 @@
           md="6"
           sm="12"
           cols="12"
-          class="d-flex flex-column justify-center align-center pa-0"
+          class="d-flex flex-column justify-center align-center pb-0"
         >
           <VImg
             :src="mainImage"
