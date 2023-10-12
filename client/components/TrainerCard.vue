@@ -1,10 +1,11 @@
 <template>
-  <VCard class="mr-10">
+  <VCard class="mr-md-10 mx-1">
     <VImg
       :width="360"
       :height="500"
       :src="trainer.img"
       cover
+      class="trainers__img"
     >
     </VImg>
     <div class="pt-4 ml-4">
@@ -17,13 +18,13 @@
         height="664"
       >
         <template v-slot:activator="{ props }">
-          <v-btn
+          <VBtn
             color="#D52027"
             class="text-none px-0 mt-5"
             variant="text"
             v-bind="props"
           >Подробнее
-          </v-btn>
+          </VBtn>
         </template>
 
         <template v-slot:default="{ isActive }">
@@ -31,8 +32,10 @@
             <VRow class="my-10 ml-10">
               <VCol class="pa-0 d-flex">
                 <VImg
-                  :width="160"
-                  :height="222"
+                  min-width="60px"
+                  min-height="88px"
+                  :width="auto"
+                  :height="auto"
                   :src="trainer.img"
                 >
                 </VImg>
@@ -49,16 +52,25 @@
                   </div>
                 </div>
               </VCol>
-              <VCol class="d-flex justify-end pa-0 mr-10">
-                <v-btn
+              <VCol class="d-sm-flex justify-end pa-0 mr-10 d-none">
+                <VBtn
                   color="#D52027"
                   class="text-none px-0 mx-0"
                   variant="text"
                   @click="isActive.value = false"
-                >Закрыть</v-btn>
+                >Закрыть</VBtn>
+              </VCol>
+              <VCol class="d-sm-none justify-end pa-0 mr-10 d-flex">
+                <VBtn
+                  color="#D52027"
+                  class="text-none px-0 mx-0"
+                  variant="text"
+                  @click="isActive.value = false"
+                  icon="mdi-close"
+                ></VBtn>
               </VCol>
             </VRow>
-            <div class="trainer-dialog__text-head mb-5 ml-10">Информация</div>
+            <div class="trainer-dialog__text-info mb-5 ml-10">Информация</div>
             <p class="trainer-dialog__text-underline mb-5 mx-auto"></p>
             <div class="trainer-dialog__text mb-10 ml-10">{{ trainer.text }}</div>
           </VCard>

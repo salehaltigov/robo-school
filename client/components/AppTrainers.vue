@@ -14,7 +14,7 @@
       prev-icon="mdi-chevron-left-circle"
       next-icon="mdi-chevron-right-circle"
       multiple
-      show-arrows
+      lg-show-arrows
     >
       <VSlideGroupItem
         v-for="trainer in trainersList"

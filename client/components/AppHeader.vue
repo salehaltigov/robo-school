@@ -1,6 +1,6 @@
 <template>
   <div class="main-header mb-16 pt-16">
-    <VContainer class="main-header__body text-md-body-1 text-subtitle-2">
+    <VContainer class="main-header__body text-md-body-1 text-subtitle-2 pb-0">
       <VRow>
         <VCol
           lg="6"
@@ -21,7 +21,7 @@
           md="6"
           sm="12"
           cols="12"
-          class="d-flex flex-column justify-center align-center"
+          class="d-flex flex-column justify-center align-center pa-0"
         >
           <VImg
             :src="mainImage"
@@ -33,7 +33,7 @@
           ></VImg>
           <a
             href="#feedback"
-            class="main-header__button d-md-none justify-center align-center text-center py-6 px-13 text-md-body-1 text-subtitle-2 d-inline-flex"
+            class="main-header__button d-md-none justify-center align-center text-center py-6 px-13 text-md-body-1 text-subtitle-2 d-inline-flex mb-10"
           >Записаться на курс</a>
         </VCol>
       </VRow>

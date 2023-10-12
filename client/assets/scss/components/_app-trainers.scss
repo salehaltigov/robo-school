@@ -1,14 +1,13 @@
 .trainers{
   margin: 0;
   &__slider{
-    width: 1680px;
+    width: auto;
     color: #141024;
     font-family: Jost;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: 160%;
-    margin-left: 250px;
   }
   &__name{
     color: #141024;
@@ -37,7 +36,7 @@
     font-weight: 400;
     line-height: 160%;
   }
-  &__text-head{
+  &__text-info{
     color: #D52027;
     font-family: Jost;
     font-size: 20px;
@@ -58,5 +57,25 @@
     background: rgba(20, 16, 36, 0.11);
     width: 860px;
     height: 1px;
+  }
+}
+
+@media (max-width:1000px){
+  .trainers{
+    &__slider{
+      width: auto;
+    }
+    &__img{
+      width: auto !important;
+      height: 306px !important;
+    }
+  }
+}
+
+@media (max-width:800px) {
+  .trainer-dialog{
+    &__head{
+      font-size: 16px;
+    }
   }
 }

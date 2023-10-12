@@ -71,13 +71,13 @@
             </template>
             <VList>
               <VListItem>
-                <a href="">О школе</a>
+                <a href="#about-school">О школе</a>
               </VListItem>
               <VListItem>
-                <a href="">Тренеры</a>
+                <a href="#trainers">Тренеры</a>
               </VListItem>
               <VListItem>
-                <a href="">Стоимость</a>
+                <a href="#price">Стоимость</a>
               </VListItem>
             </VList>
           </VMenu>
